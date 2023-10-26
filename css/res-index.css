@@ -1,0 +1,109 @@
+@media (max-width:885px){
+    .welcome-msg .msg-img::before{
+        height: 90%;
+    }
+}
+nav{
+    background-color: white;
+box-shadow: rgb(204, 204, 204) 1px 10px 15px;
+}
+@media (max-width:835px){
+    .welcome-msg .msg-img::before{
+        height: 83%;
+    }
+}
+@media (max-width:768px) {
+    .ExtraBtn{
+        display: none;
+    }
+    .linkss{
+        padding-right: 2em;
+    }
+    .welcome-msg .msg-img::before{
+        height: 78%;
+    }
+    .green-bg{
+        width: 450px;
+    }
+}
+
+@media (max-width:415px){
+    .Navactive{
+            position: absolute;
+            left: 0;
+            width: -webkit-fill-available;
+            display: flex!important;
+            padding: 1em;
+            flex-direction: column;
+            top: 5em;
+            background: #fff;
+        
+    }
+    .linkss{
+        display: none;
+    }
+    .bar1{
+        display: block;
+        font-size: xx-large;
+        padding: 1em;
+    }
+    .welcome-msg{
+        flex-direction: column-reverse;
+    }
+    .welcome-msg .msg{
+        margin: 2em 1em;
+    }
+    .wel .coloured{
+        font-size: 1.2em;
+    }
+    .welcome-msg .msg-img{
+        width: 100%;
+    }
+    .welcome-msg .msg-img::before{
+        height: 100%;
+    }
+    .note{
+        height: auto;
+    }
+    .catelist{
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        justify-content: unset;
+    }
+    .Products{
+        padding: 2em;
+    }
+    .prolist{
+        padding: 0;
+    }
+    .yframe{
+        flex-direction: column-reverse;
+    }
+    .yframe .yf-content{
+        width: 100%;
+    }
+    .yframe .yf-img{
+        width: 100%;
+    }
+    .bg-review{
+        height: auto;
+    }
+    .green-bg{
+        line-height: 0;
+    }
+    .green-content{
+        text-align: center;
+    }
+    .green-content button{
+        display: none;
+    }
+    .review-lists{
+        position: unset;
+        width: 100%;
+        background: rgb(4, 27, 12,0.81);
+        padding-bottom: 4em;
+    }
+    footer .col{
+        text-align: left;
+    }
+}

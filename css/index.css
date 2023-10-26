@@ -1,0 +1,566 @@
+/* root */
+body{
+    margin: 0;
+    text-align: center;
+}
+.light{
+  color:gold;
+  /* border: 1px solid gold; */
+}
+.dim{
+  color: #cccccc8F;
+  /* border: 1px solid #000; */
+}
+.btn{
+    padding: 1em 3em;
+}
+.primery{
+    padding: 1em 2.5em;
+        margin: 1em;
+        border-radius: 25px;
+        background-color: rgb(64, 185, 64);
+        color: #f1f1f1;
+        border: 1px solid rgb(64, 185, 64);
+}
+.primery:hover {
+    color: rgb(64, 185, 64);
+    cursor: pointer;
+    background-color: #fff;
+}
+
+
+
+/* navbar */
+nav{
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    top:0;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+       
+}
+.bar1{
+  display: none;
+}
+.linkss{
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+}
+
+.nav .logo{
+    width: 100px;
+
+}
+.nav .logo img{
+    width: 100%;
+}
+
+.linkss li{
+    color:rgb(64, 185, 64) ;
+    font-size: 1.5em;
+}
+.linkss li:hover{
+    color: #127707;
+    cursor: pointer;
+    text-shadow: 1px 5px 15px wheat;
+}
+
+
+/* slider */
+
+
+.slider_section {
+    /* max-width: 600px; */
+    height: 100%;
+    margin:5em 0 0 0;
+    position: relative;
+  }
+ 
+  
+  .single_img {
+    display: none;
+  }
+  
+  .single_img:first-child {
+    display: block;
+  }
+  
+  .imgslider{
+    height: 600px;
+    
+    position: relative;
+    background-position: center;
+    line-height: 600px;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+  }
+  .imgslider::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    z-index: -1;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+  }
+  .slideImg3{
+    background-image: url(../img/Sattvic-diet.png);
+  }
+.slideImg5{
+    background-image: url(../img/Slider_3.jpeg);
+  }
+  .slideImg1{
+    background-image: url(../img/shatam-jeeva-home-banner-4.png);
+  }
+  .slideImg2{
+    background-image: url(../img/Shatam-Jeeva-Home-Banner-1.jpg.webp);
+  }
+  .slideImg4{
+    background-image: url(../img/Website_Section_Banner_Image.jpeg)!important;
+  }
+  .slidercontent{
+    line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+  }
+  .single_img h2{
+    color: #f1f1f1;
+    font-size: 3em;
+  }
+  #left_slider,
+  #right_slider {
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    background-color: transparent;
+    position: absolute;
+    top: 40%;
+    cursor: pointer;
+  }
+  
+  #left_slider:hover,
+  #right_slider:hover {
+    background-color: rgb(0, 0, 0, 0.4);
+  }
+  
+  /*position left arrow*/
+  #left_slider {
+    left: 0;
+  }
+  
+  /*position right arrow*/
+  #right_slider {
+    right: 0;
+  }
+  
+  
+  
+  .description {
+    padding: 0 10px 10px;
+  }
+/* welcome */
+
+.wel{
+  margin: 4em 0;
+}
+
+.wel h2{
+  color: #46615c;
+}
+
+.wel .coloured{
+  color: rgb(246, 122, 6);
+  font-size: 2em;
+}
+  .wel p{
+    color: #929191;
+    font-size: 1.1em;
+  }
+
+  /* catelist */
+    .category{
+      margin: 4em 0;
+    }
+.category h4{
+  color: rgb(41, 150, 41);
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+.category h2{
+  font-size: 2.5em;
+  margin-top: 0;
+}
+
+  .catelist{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    width: 90%;
+    margin: auto;
+  }
+  .catelist .cate img{
+    width: 100px;
+    border: 1px solid #000;
+    /* border-radius: 180px; */
+    border-radius: 75px 75px 0 0;
+  }
+  .cate{
+    width: 150px;
+    padding: 1em 0 0;
+    background-color: #e0b59775;
+    /* border-radius: 75px 75px 0 0; */
+    border: 2px solid #000;
+  }
+  .cate:hover{
+    box-shadow: 1px 5px 25px #000;
+  }
+
+
+  /* msg */
+.welcome-msg{
+  display: flex;
+  width: 85%;
+  margin: 5em auto;
+
+}
+  .welcome-msg .msg h4{
+    color: #46615c;
+  }
+  .welcome-msg .msg-img{
+    width: 50%;
+    position: relative;
+    z-index: 0;
+  }
+  .welcome-msg .msg-img::before{
+    content: "";
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    background-color: #000;
+    opacity: .7;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+  .welcome-msg .msg-img::before:hover{
+    /* opacity: 0; */
+  }
+  .welcome-msg .msg-img img{
+    width: -webkit-fill-available;
+  }
+
+  .welcome-msg .msg {
+    text-align: start;
+    margin: 0 1em 0 0;
+  }
+  .welcome-msg .msg p{
+    color: #929191;
+  }
+
+
+
+  /* note */
+
+  .note{
+    margin:4em 0;
+    height: auto;
+    line-height: 16em;
+    background-color: rgba(70,97,92,0.4);
+  }.note-center{
+    line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+  width: 60%;
+  margin: auto;
+  }
+  .note-center h3{
+    color:#46615c;  
+    font-size: 1.5em;
+  }
+  .note-center p{
+    color: #929191;
+    font-size: 1.1em;
+    margin: 24px auto;
+  }
+
+
+/* Products */
+
+.Products{
+  padding: 4em;
+  background-color: #ccc;
+}
+
+.Products .pro-content{
+  text-align: start;
+}
+.Products .pro-content h4{
+  color: rgb(64, 185, 64);
+  font-size: 1.6em;
+}
+.Products .pro-content h3{
+  color: #46615c;
+  font-size: 2em;
+}
+
+.prolist{
+  display: flex;
+  padding: 1em;
+  gap: 1em;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+.prolist::-webkit-scrollbar {
+  display: none;
+}
+
+.pro{
+  width: 250px;
+  background-color: whitesmoke;
+  cursor: pointer;
+  padding-bottom: 1em;
+}
+.pro:hover{
+  box-shadow: 1px 5px 15px #000;
+}
+.pro img{
+  width: -webkit-fill-available;
+}
+
+/* you tube Frame */
+
+.yframe{
+  padding: 4em;
+  background-color: #dde5be;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+
+}
+.yframe .yf-content {
+  text-align: start;
+  width: 70%;
+}
+.yframe .yf-content h4{
+  color: rgb(64, 185, 64);
+}
+.yframe .yf-content h3{
+  color: #000000cb;
+  font-size: 2em;
+}
+.yframe .yf-content p{
+color: #7e7c7c;
+}
+.yframe .yf-img{
+  width: 70%;
+
+}
+
+.yframe .yf-img iframe{
+  width: -webkit-fill-available;
+}
+
+
+/* review */
+.test{
+  position: relative;
+}
+.bg-review{
+  height: 600px;
+  display: flex;
+}
+.green-bg{
+  background-color: rgb(4, 27, 12,0.81);
+  width: 550px;
+  line-height: 600px;
+}
+.green-content{
+  line-height: 1;
+  padding: 4em;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: start;
+}
+.green-content h5{
+  color: rgb(64, 185, 64);
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+.green-content h3{
+  color: #f1f1f1;
+  margin-top: 1em;
+  font-size: 3em;
+}
+.review{
+}
+.review-lists{
+  position: absolute;
+  display: flex;
+  top: 12em;
+  right: 0;
+  gap: 1em;
+  width: 58%;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+.review-lists::-webkit-scrollbar {
+  display: none;
+}
+.snip1533 {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+ cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  margin: 35px 10px 10px;
+  max-width: 310px;
+  min-width: 250px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border-top: 5px solid #d2652d;
+}
+.snip1533:hover{
+  box-shadow: 1px 5px 15px #000;
+}
+
+.snip1533 *,
+.snip1533 *:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+}
+
+.snip1533 figcaption {
+  padding: 13% 10% 12%;
+}
+
+.snip1533 figcaption:before {
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  color: #d2652d;
+  content: "\f10e";
+  font-family: 'FontAwesome';
+  font-size: 32px;
+  font-style: normal;
+  left: 50%;
+  line-height: 60px;
+  position: absolute;
+  top: -30px;
+  width: 60px;
+}
+
+.snip1533 h3 {
+  color: #3c3c3c;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24px;
+  margin: 10px 0 5px;
+}
+
+.snip1533 h4 {
+  font-weight: 400;
+  margin: 0;
+  opacity: 0.5;
+}
+
+.snip1533 blockquote {
+  font-style: italic;
+  font-weight: 300;
+  margin: 0 0 20px;
+}
+
+/* footer */
+
+footer{
+  display: flex;
+  background:linear-gradient(299.49deg, #3F5152 15.82%, #486567 94.11%);
+  flex-wrap: wrap;
+  padding: 40px 80px;
+  justify-content: space-between;
+}
+
+footer .col{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+footer .logo{
+  /* margin-bottom: 30px; */
+  width: 100px;
+}
+
+footer h4{
+  font-size: 1.2em;
+  color: #0eb568;
+  padding-bottom: 10px;
+}
+
+footer p{
+  font-size: 16px;
+  color: #f1f1f1;
+  margin: 0 0 8px 0;
+}
+
+
+footer a{
+  font-size: 16px;
+  text-decoration: none;
+  color: #f1f1f1;
+  margin-bottom: 10px;
+}
+
+footer .follow{
+  margin-top: 20px;
+}
+
+footer .follow i{
+  color: #f1f1f1;
+  padding-right: 4px;
+  cursor: pointer;
+}
+
+footer .install .row img{
+  border: 1px solid #088178;
+  border-radius: 6px;
+  width: 45%;
+  height: 75%;
+
+}
+footer .install img{
+  margin: 10px 0 15px 0;
+}
+
+footer .install p{
+  margin-top: 15px;
+}
+
+footer .follow i:hover,
+footer a:hover{
+  color: #088178;
+
+}
+
+.copyright{
+  width: 100%;
+  text-align: center;
+  padding-top: 15px;
+}
+
